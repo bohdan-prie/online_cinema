@@ -48,7 +48,7 @@ namespace LecturesProjectExample.Controllers
             IService<User> service = new UserService();
             Console.WriteLine(service.GetId(user));
         }
-    }
+        }
 
     public interface IEntity { public string Id { get; } }
     public sealed class User : IEntity { public string Id => "1"; }

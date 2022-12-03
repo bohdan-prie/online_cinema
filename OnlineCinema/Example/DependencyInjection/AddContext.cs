@@ -8,7 +8,7 @@ public static class AddContext
     public static IServiceCollection AddJournalContext(this IServiceCollection services, string connectionString)
     {
         services.AddDbContext<JournalContextDb>(options =>
-        {
+    {
             options.UseSqlServer(connectionString);
         });
 
